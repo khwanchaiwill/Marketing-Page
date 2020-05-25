@@ -1,0 +1,682 @@
+@import "global.less";
+@import "home-page.less";
+@import "navigation.less";
+@import "reset.less";
+@import "variables.less";
+@import "footer.less";
+@import "mixins.less";
+@import "responsive.less";
+//main variable.less
+@main-color: @specific-red;
+@accent-color: @blizzard-blue;
+
+@specific-red: crimson;
+@blizzard-blue: #96EEEB;
+
+@font-stack: Arial, "sans-serif";
+@main-font: 'DM Mono', monospace;
+@second-font: 'Roboto', sans-serif;
+
+//my less start here
+
+body{
+
+    @media @desktop1000{
+        background-color: rgba(1, 22, 34, 0.986);               
+            
+    }
+    @media @tablet{
+        width: 100%;       
+        background-color: @backg-color1;
+
+    }
+
+    header{
+        
+        @media @desktop1000{
+ 
+            background-color: rgba(49, 75, 87, 0.938);              
+                
+        }  
+        
+        @media @tablet{
+                    
+            background-color: rgba(59, 68, 77, 0.938);
+
+        }
+        @media @mobile{
+           width: 100%;         
+           background-color: @blizzard-blue;
+
+        }        
+        
+        
+               
+           .main-head{
+
+                 @media @desktop1000{
+                    width: 100%;
+                    margin-left: 4%; 
+                    background-color: rgba(49, 75, 87, 0.938);                
+                    
+                }     
+
+                @media @tablet{
+                    
+                    .displaywrap();
+                    width: 95%;
+                    margin: 1.5% 0% 1.5% 3%;
+                    
+
+                }
+                @media @mobile{
+                    
+                    .display-column();
+                    width: 99%;
+                    margin: 0;
+                    background-color: @blizzard-blue;
+
+                }                
+                      
+                
+                h1{
+                    
+                    @media @desktop1000{
+                        font-size: @fontsize-1;
+                        color: @blizzard-blue;
+                        
+
+                    }
+
+                    
+                    @media @tablet{
+                        align-content: center;
+                            width: 100%;
+                            font-size: @fontsize-3;
+                            margin: 2% 0% 2% 2%;
+                            color: rgb(238, 211, 211);
+        
+                        }
+
+                    @media @mobile{
+                        width: 100%;
+                        margin: 2% 0;
+                        font-size: @fontsize-4; 
+                        text-align: center;
+                        color: black;
+                           
+                    }
+
+                    
+                        
+                        
+                }
+
+                .main-headtwo{
+                    
+                        @media @desktop1000{    
+                            width: 55%;
+                        }
+
+                        @media @tablet{
+                            width: 50%;
+                            margin: 0%;
+        
+                        }
+
+                        @media @mobile{
+                        margin: 2% 0;
+                        width: 100%;
+                        font-size: @fontsize-7; 
+                        text-align: center;   
+                    }
+
+                    
+
+
+                    a{
+                        font-family: @mainfont;
+                        .nav-a();
+                        
+                        @media @desktop1000{
+                            font-size: @fontsize-3;
+                            color: rgb(215, 215, 252);
+                                
+                        }
+                        @media @tablet{
+                                
+                            font-size: @fontsize-6;
+                            margin: 0%;
+        
+                        }
+
+                        @media @mobile{
+                            font-size: @fontsize-6; 
+                            text-align: center;   
+                            color: rgb(94, 91, 91);
+                            
+                        }
+
+                            
+
+                            
+                                                               
+                    }
+                      a.main-type4{
+                        text-align: end;
+                        width: 40%;
+                        color: gray;
+                           
+                            @media @desktop1000{
+                                font-size: @fontsize-5;
+                                padding-right: 2%;
+                                font-family: @mainfont;
+                                
+                            }
+
+                            @media @tablet{
+                                width: 30;    
+                                font-size: @fontsize-7;
+                                margin: 0%;
+            
+                            }
+                            
+                        @media @mobile{
+                            width: 25%;
+                            
+                        }
+                                                        
+                    } 
+                }
+
+            }
+    }//close header
+
+    section.part-one{
+
+        @media @desktop1000{
+            width: 100%;
+            
+        }
+    
+            @media @tablet{
+                width: 100%;                   
+                margin: 0%;
+
+            }
+
+            @media @mobile{
+                background-size: cover; 
+                background-position: center;  
+                background-attachment: fixed;            
+                background-image: url("https://images.unsplash.com/photo-1505236116346-cb80596d13dc?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=tim-foster-kUOQujUdfSY-unsplash.jpg");  
+                        
+                
+            }
+
+        
+       
+                             
+    
+        .text{
+                         
+                @media @desktop1000{
+                    width: 45%;
+                    margin: 0 0 0 4%;
+                    
+                }
+                @media @tablet{
+                    width: 42%;        
+                    margin: 0 0 0 3%;
+                    padding-top: 1.5%;
+
+                } 
+                @media @mobile{
+                    width: 100%;
+                    margin: 0 1.5%;  
+                                
+                }
+
+                
+                
+
+            h2{          
+                
+                @media @desktop1000{
+                    width: 100%;
+                    font-size: @fontsize-2;
+                    color: @blizzard-blue;
+                   
+                    
+                }
+
+                @media @tablet{
+                    width: 100%;        
+                    margin: 0%;
+                    font-size: @fontsize-5;
+                    padding-top: 2%;
+                    color: rgb(2, 2, 20);
+
+                }
+
+                @media @mobile{
+                    width: 100%;                    
+                    font-size: @fontsize-4;
+                    color: rgb(178, 236, 176);
+                    text-align: center;                   
+                                                
+                }             
+
+                
+            }
+
+            h3{
+                
+                @media @desktop1000{
+                    width: 100%;
+                    font-size: @fontsize-4;
+                    color: @blizzard-blue;
+                   
+                    
+                }
+
+                @media @tablet{
+                    width: 100%;        
+                    margin: 0%;
+                    font-size: @fontsize-5;
+                    color: rgb(2, 2, 20);
+
+                }
+                
+                @media @mobile{
+                    text-align: center;  
+                    width: 100%;
+                    font-size: @fontsize-5;
+                    color:  rgb(178, 236, 176);
+                    margin-bottom: 2%;
+                                
+                }     
+                
+               
+
+            }
+
+            p{
+               
+               @media @desktop1000{
+                    width: 100%;
+                    font-size: @fontsize-6; 
+                    color: @blizzard-blue;                 
+                    
+                }
+                
+                @media @tablet{
+                    width: 100%;        
+                    margin: 0%;
+                    font-size: @fontsize-7;
+                    color: rgb(2, 2, 20);
+
+                }
+                
+                @media @mobile{
+                    width: 100%;
+                    font-size: @fontsize-7;
+                    color:  rgb(141, 202, 243);
+                                
+                }     
+
+                
+
+            }
+
+            .click{
+
+                .displaywrap();
+                justify-content: space-evenly;  
+                
+                
+                @media @tablet{
+
+                    width: 100%;        
+                    
+                    margin: 6% 0;
+                    
+
+                }
+
+                @media @mobile{
+                    width: 100%;                   
+                                
+                }    
+                
+                button{ 
+                                   
+                    @media @tablet{
+
+                        width: 70%;        
+                        margin: 0%;
+                        font-size: @fontsize-7;
+                        margin: 1.5% 0;
+                        &:hover{
+                            background-color: blue;
+                            color: cornsilk;
+                        }
+                        
+    
+                    }
+                    
+                    @media @mobile{
+                        width: 45%;
+                        background-color: rgb(71, 73, 75);
+                        font-size: @fontsize-7;
+                        color:  rgb(141, 202, 243);
+                                    
+                    }   
+                    
+                }
+            }
+        } //close this div text
+        .image{   
+            margin-right: 8%;         
+            width: 45%;
+            
+
+                @media @desktop1000{
+                    width: 47%;
+                    margin: 0% 2% 0% 0%;
+                    
+                }
+                @media @tablet{
+
+                    width: 48%;        
+                    margin: 0% 3% 0% 0.5%;                   
+                }
+                
+                    @media @mobile{
+                        display: none;
+                                                
+                    }                  
+    
+
+            img{
+                width: 100%;
+                height: 450px;
+                border-radius:50px;
+
+                @media @desktop1000{
+                    width: 100%;
+                    height: 400px;
+                   
+                    
+                }
+
+                @media @tablet{
+
+                    width: 100%;        
+                    height: 300px; 
+                    padding: 3% 0;                
+                }
+
+                
+
+            }
+
+            
+        } //close image
+    } //close section one
+
+    section.part-two{
+
+        @media @tablet{
+
+            width: 100%;                   
+            margin: 1.5% 0;               
+        }
+
+            @media @mobile{
+                width: 100%;
+            }                
+
+        .middle-part{
+            .displaywrap();
+            justify-content: space-evenly;
+            margin: 0 5%;
+            width: 90%;
+
+            @media @tablet{
+
+                width: 97%;   
+                margin: 0 1.5%;     
+                               
+            }
+
+            @media @mobile{
+                width: 100%;
+                margin: 0;
+                align-content: center;
+                                          
+            }                
+                .middle-one{
+                    .display-column();
+                    .themiddle-part();
+                    
+
+                    @media @tablet{
+
+                        .media800-part();              
+                     }
+
+                    @media @mobile{
+                        
+                        width: 30%;
+                        margin: 0 2.5%;        
+                                    
+                    }                
+
+                        img{
+                            .imgfixed();
+
+                            @media @tablet{
+
+                               .media-img();                
+                            }
+
+                            @media @mobile{
+                        
+                                .med-imgfixed();  
+                                            
+                            }   
+                        }
+
+                        a{
+                           .atag();
+
+                           
+                            @media @desktop1000{
+                                .media1000-atag();
+                                
+                            }
+                            
+                            @media @tablet{
+                                .media800-atag();
+                            }
+                           
+
+                            @media @mobile{
+                                .med-atag();
+                                        
+                            }           
+                        }
+                }
+
+                .middle-two{
+                    .display-column();
+                    .themiddle-part();
+
+                    @media @tablet{
+                        .media800-part();
+                                      
+                    }
+
+                    @media @mobile{
+                        
+                        width: 30%;
+                        margin: 0 2.5%;    
+                                    
+                    }              
+
+                    img{
+                        .imgfixed();
+
+                        @media @tablet{
+
+                            .media-img();                
+                        }
+
+                        @media @mobile{
+                        
+                            .med-imgfixed();  
+                                        
+                        }   
+                    }
+                    
+                    a{
+                        .atag();
+
+                        @media @desktop1000{
+                            
+                            .media1000-atag();
+                            
+                        }
+
+                        @media @tablet{
+                            .media800-atag();
+                        }
+
+                        @media @mobile{
+                            .med-atag();
+                                        
+                        }           
+                    }
+
+                }
+
+                .middle-three{
+                    .display-column();
+                    .themiddle-part();
+
+                    @media @tablet{
+
+                        .media800-part();               
+                     }
+
+                    @media @mobile{
+                        
+                        width: 30%;  
+                        margin: 0 2.5%;      
+                                    
+                    }          
+
+                    img{
+
+                        .imgfixed();
+
+                        @media @tablet{
+
+                            .media-img();                
+                        }
+
+                        @media @mobile{
+                        
+                            .med-imgfixed();  
+                                        
+                        }   
+
+                    }
+
+                    a{
+                        .atag();
+                        
+                        @media @desktop1000{
+                            .media1000-atag();                       
+                            
+                        }
+
+                        @media @tablet{
+                            .media800-atag();
+                        }
+
+                        @media @mobile{
+                            .med-atag();
+                                        
+                        }          
+                    }
+                }
+
+    
+        } //This is the middle part
+      
+    } // close section two
+
+    footer{        
+        
+        @media @desktop1000{
+            background-color: rgba(49, 75, 87, 0.938);                   
+            
+        }
+
+        @media @tablet{
+            background-color: rgba(59, 68, 77, 0.938);
+        }
+
+        @media @mobile{
+            background-color: @blizzard-blue;
+                        
+        }         
+        .foot{
+
+                h3{
+                    padding-top: 2%;
+                    font-size: @fontsize-3;
+
+                    @media @desktop1000{
+                        color: rgb(188, 188, 226);                  
+                        
+                    }
+            
+
+                    @media @tablet{
+                        color: rgb(170, 245, 235);
+                        text-align: center;
+                        font-size: @fontsize-5;
+                    }
+
+                    @media @mobile{
+                        font-size: @fontsize-6;
+                        color: black;
+                                    
+                    }         
+                }
+                a{
+                    .atag();
+
+                    @media @desktop1000{
+                        color: rgb(188, 188, 226);                  
+                        
+                    }
+
+                    @media @tablet{
+                        color: rgb(170, 245, 235);
+                        text-align: center;
+                    }
+
+                    @media @mobile{
+                        .med-atag();
+                                    
+                    }         
+                }
+        }
+
+    } // this is footer
+
+} // Close the body
