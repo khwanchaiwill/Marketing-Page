@@ -1,18 +1,17 @@
 body {
   width: 100%;
-  border: solid black;
   background-color: #6caec9;
 }
 body header {
   background-color: #96EEEB;
-  width: 99%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-content: space-around;
   justify-content: space-between;
 }
 body header .main-head {
-  width: 99%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-content: space-around;
@@ -26,7 +25,7 @@ body header .main-head h1 {
   font-family: 'Lora', serif;
 }
 body header .main-headtwo {
-  width: 99%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-content: space-around;
@@ -44,7 +43,7 @@ body header .main-headtwo a {
   font-family: 'Lora', serif;
 }
 body section.part-one {
-  width: 99%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-content: space-around;
@@ -259,12 +258,11 @@ footer .foot {
 }
 @media ( max-width: 800px ) {
   body header .main-head {
-    width: 99%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-content: space-around;
     justify-content: space-between;
-    width: 95%;
     margin: 1.5% 0% 1.5% 3%;
   }
 }
@@ -272,7 +270,7 @@ footer .foot {
   body header .main-head {
     display: flex;
     flex-direction: column;
-    width: 99%;
+    width: 100%;
     margin: 0;
     background-color: #96EEEB;
   }
@@ -482,7 +480,7 @@ body header .main-head .main-headtwo a.main-type4 {
   }
 }
 body section.part-one .text .click {
-  width: 99%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-content: space-around;
@@ -571,7 +569,7 @@ body section.part-one .image img {
   }
 }
 body section.part-two .middle-part {
-  width: 99%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-content: space-around;
